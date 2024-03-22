@@ -16,6 +16,11 @@ namespace SintaxisBasica
             int numeroPersonas = 34;
             double promedioPersonas;
             promedioPersonas = numeroPersonas;
+
+            //conversion de String a number
+            String miTexto = "123";
+            //el metodo Parse() esta disponible en todas las clases de los tipos de datos y permite hacer un casting de una variable a ese tipo
+            int miNumero = int.Parse(miTexto);
         }
     }
 }

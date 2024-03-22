@@ -2,7 +2,7 @@ namespace SintaxisBasica
 {
     class TiposDeDatos
     {
-        static void Main()
+        public TiposDeDatos()
         {
             /*
             existen dos grandes grupos de tipos

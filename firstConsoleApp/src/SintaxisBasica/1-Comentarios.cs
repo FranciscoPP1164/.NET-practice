@@ -2,7 +2,7 @@ namespace SintaxisBasica
 {
     class Comentarios
     {
-        static void Main()
+        public Comentarios()
         {
             // esto es un comentario
             // Console.WriteLine("Hola mundo desde PalabrasReservadas");

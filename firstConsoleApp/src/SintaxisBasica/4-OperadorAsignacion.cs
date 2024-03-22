@@ -2,7 +2,7 @@ namespace SintaxisBasica
 {
     class OperadorAsignacion
     {
-        static void Main()
+        public OperadorAsignacion()
         {
             //el operador "=" se usar para asignar el valor o la referencia de una expresion a una variable.
 

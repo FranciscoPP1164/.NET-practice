@@ -2,7 +2,7 @@ namespace SintaxisBasica
 {
     class CastingDeTipos
     {
-        static void Main()
+        public CastingDeTipos()
         {
 
             //el casting explicito es especificar al compilador a que tipo se tendra que convertir un valor de un tipo diferente para ser

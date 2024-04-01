@@ -1,3 +1,5 @@
+using System.Diagnostics.Contracts;
+
 namespace POO
 {
     partial class Coche
@@ -7,6 +9,7 @@ namespace POO
         private double ancho;
         private bool climatizador;
         private string tapiceria;
+        private static int contadorDeObjetos = 0;
 
         public Coche(double largo, double ancho, bool climatizador, string tapiceria)
         {
@@ -15,24 +18,18 @@ namespace POO
             this.ancho = ancho;
             this.climatizador = climatizador;
             this.tapiceria = tapiceria;
+            contadorDeObjetos++;
         }
     }
 
     partial class Coche
     {
-        public int GetRuedas()
-        {
-            return ruedas;
-        }
+        public int GetRuedas() => ruedas;
 
-        public void SetRuedas(int ruedas)
-        {
-            this.ruedas = ruedas;
-        }
+        public void SetRuedas(int ruedas) => this.ruedas = ruedas;
 
-        public string GetInfoCoche()
-        {
-            return $"Ruedas:{ruedas}\nLargo:{largo}\nAncho:{ancho}\nClimatizador:{climatizador}\nTapiceria:{tapiceria}";
-        }
+        public string GetInfoCoche() => $"Ruedas:{ruedas}\nLargo:{largo}\nAncho:{ancho}\nClimatizador:{climatizador}\nTapiceria:{tapiceria}";
+
+        public static int getNumeroDeObjetos() => contadorDeObjetos;
     }
 }

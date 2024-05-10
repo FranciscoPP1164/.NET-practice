@@ -1,5 +1,3 @@
-using System.Diagnostics.Contracts;
-
 namespace POO
 {
     partial class Coche

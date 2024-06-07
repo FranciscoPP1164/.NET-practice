@@ -12,7 +12,6 @@ namespace App
             // Arrays();
             // Herencia();
             // Interfaces();
-            ClasesAbstractas();
         }
 
         static void POO1()
@@ -155,11 +154,6 @@ namespace App
             //No se permiten destructores
             //No se especifican modificadores de acceso
             //No se pueden anidar ningun tipo de estructura dentro de una interfaz
-        }
-
-        static void ClasesAbstractas()
-        {
-
         }
     }
 }

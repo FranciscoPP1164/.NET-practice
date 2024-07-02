@@ -12,6 +12,7 @@ namespace App
             // Arrays();
             // Herencia();
             // Interfaces();
+            Genericos();
         }
 
         static void POO1()
@@ -154,6 +155,13 @@ namespace App
             //No se permiten destructores
             //No se especifican modificadores de acceso
             //No se pueden anidar ningun tipo de estructura dentro de una interfaz
+        }
+
+        static void Genericos()
+        {
+            // Genericos<int> listaNumeros = new Genericos<int>(4);
+
+            // Genericos<string> listaStrings = new Genericos<string>(2);
         }
     }
 }

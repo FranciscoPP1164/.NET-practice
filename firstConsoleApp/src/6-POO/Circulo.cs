@@ -9,6 +9,7 @@ namespace POO
             return Math.Pow(radio, 2) * pi;
         }
 
+        //Los destructores son metodos que son invocados cuando el objeto es destruido por el garbage colector
         ~Circulo()
         {
             Console.WriteLine("Destruyendo el objeto");

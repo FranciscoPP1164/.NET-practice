@@ -8,5 +8,10 @@ namespace POO
         {
             return Math.Pow(radio, 2) * pi;
         }
+
+        ~Circulo()
+        {
+            Console.WriteLine("Destruyendo el objeto");
+        }
     }
 }

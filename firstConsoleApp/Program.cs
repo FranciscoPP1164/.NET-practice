@@ -1,4 +1,5 @@
-﻿using POO;
+﻿using Colecciones;
+using POO;
 using POO.Mamiferos;
 using POO.Mamiferos.Interfaces;
 
@@ -12,7 +13,8 @@ namespace App
             // Arrays();
             // Herencia();
             // Interfaces();
-            Genericos();
+            // Genericos();
+            Colecciones();
         }
 
         static void POO1()
@@ -162,6 +164,16 @@ namespace App
             // Genericos<int> listaNumeros = new Genericos<int>(4);
 
             // Genericos<string> listaStrings = new Genericos<string>(2);
+        }
+
+        //Las colecciones son un tipo de objeto que se comporta como los Arrays, pero permitiendo añadir o eliminar elementos en la misma, ademas de tener diferentes comportamientos dependiendo del tipo de collecion que se use.
+        static void Colecciones()
+        {
+            new ColeccionList();
+            new ColeccionLinkedList();
+            new ColeccionQueue();
+            new ColeccionStack();
+            new ColeccionDictionary();
         }
     }
 }

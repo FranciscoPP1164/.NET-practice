@@ -1,4 +1,5 @@
 ﻿using Colecciones;
+using DelegadosPredicadosLambdas;
 using POO;
 using POO.Mamiferos;
 using POO.Mamiferos.Interfaces;
@@ -14,7 +15,8 @@ namespace App
             // Herencia();
             // Interfaces();
             // Genericos();
-            Colecciones();
+            // Colecciones();
+            DelegadosPredicadosLambdas();
         }
 
         static void POO1()
@@ -174,6 +176,13 @@ namespace App
             new ColeccionQueue();
             new ColeccionStack();
             new ColeccionDictionary();
+        }
+
+        static void DelegadosPredicadosLambdas()
+        {
+            // new Delegados();
+            // new Predicados();
+            new Lambdas();
         }
     }
 }

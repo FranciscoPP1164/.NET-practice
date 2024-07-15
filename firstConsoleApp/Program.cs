@@ -1,5 +1,6 @@
 ﻿using Colecciones;
 using DelegadosPredicadosLambdas;
+using LINQ;
 using POO;
 using POO.Mamiferos;
 using POO.Mamiferos.Interfaces;
@@ -16,7 +17,8 @@ namespace App
             // Interfaces();
             // Genericos();
             // Colecciones();
-            DelegadosPredicadosLambdas();
+            // DelegadosPredicadosLambdas();
+            Linq();
         }
 
         static void POO1()
@@ -180,9 +182,15 @@ namespace App
 
         static void DelegadosPredicadosLambdas()
         {
-            // new Delegados();
-            // new Predicados();
+            new Delegados();
+            new Predicados();
             new Lambdas();
+        }
+
+        static void Linq()
+        {
+            // new LINQ.SintaxisBasica();
+            new LINQ.ConceptosBasicos();
         }
     }
 }

@@ -1,5 +1,7 @@
 namespace DelegadosPredicadosLambdas
 {
+    //Las lambdas son una expresion moderna para crear delegados
+    //En esencia son Arrow Functions de JavaScript
     class Lambdas
     {
         public Lambdas()

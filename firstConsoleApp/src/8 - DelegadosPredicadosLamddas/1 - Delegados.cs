@@ -1,5 +1,7 @@
 namespace DelegadosPredicadosLambdas
 {
+    //Un delegado es un objeto el cual esta en la capacidad de delegar una tarea a una funcion, y cambiar la funcion la cual es delegada
+    //En esencia son CallBacks
     class Delegados
     {
         public Delegados()

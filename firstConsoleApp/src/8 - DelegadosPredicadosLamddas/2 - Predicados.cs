@@ -1,5 +1,6 @@
 namespace DelegadosPredicadosLambdas
 {
+    //Los predicados son Delegados los cuales siempre retornan valores booleanos
     class Predicados
     {
         Predicate<int> predicado;

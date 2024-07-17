@@ -4,6 +4,7 @@ using LINQ;
 using POO;
 using POO.Mamiferos;
 using POO.Mamiferos.Interfaces;
+using SintaxisAvanzada;
 
 namespace App
 {
@@ -18,7 +19,7 @@ namespace App
             // Genericos();
             // Colecciones();
             // DelegadosPredicadosLambdas();
-            Linq();
+            // Linq();
         }
 
         static void POO1()

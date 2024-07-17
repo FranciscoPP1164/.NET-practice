@@ -1,11 +1,13 @@
-using System.Security.Cryptography.X509Certificates;
-
 namespace SintaxisAvanzada;
 
 class Discards
 {
     public void TupleObjectDeconstruction()
     {
+        //El operador discard _ permite omitir una variable la cual tubiera que ser asignada en una expresion
+        //como por ejemplo una deconstruccion o un metodo que devuelva una tupla, de esta forma no se crea una
+        //variable en memoria y se declara de forma explicita que ese valor es irrelevante para
+        //la operacion que se este llevando a cabo en ese momento
         var (_, _, _, pop1, _, pop2) = QueryCityDataForYears("New York City", 1960, 2010);
 
         Console.WriteLine($"Population change, 1960 to 2010: {pop2 - pop1:N0}");
@@ -55,7 +57,8 @@ class Discards
             State = stateName;
         }
 
-        // Return the first and last name.
+        //El metodo Deconstruct de una clase se usa para definir el comportamiento que tendra un objeto de un tipo
+        //cuando este sea usado en una expresion de deconstruccion
         public void Deconstruct(out string fname, out string lname)
         {
             fname = FirstName;

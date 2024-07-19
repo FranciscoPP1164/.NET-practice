@@ -2,7 +2,7 @@ using System.Collections;
 
 namespace SintaxisAvanzada;
 
-//Toda clase que implemente la interfaz IEnumerable<T> o similares debera implementar un metodo GetEnumerator() que definira el comportamiento de la clase cuando sea iterada
+//Toda clase que implemente la interfaz IEnumerable<T> o similares debera implementar un metodo GetEnumerator() que debe retornar un objeto que implemente la interfaz IEnumerator<T>
 class Iterators : IEnumerable<int>
 {
     private EnumeratorType<int> Enumerator;
@@ -76,9 +76,6 @@ public class EnumeratorType<T> : IEnumerator<T>
 
     object IEnumerator.Current
     {
-        get
-        {
-            return Current;
-        }
+        get => Current;
     }
 }

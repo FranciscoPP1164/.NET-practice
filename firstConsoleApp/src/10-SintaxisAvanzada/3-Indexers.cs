@@ -7,9 +7,11 @@ class Indexers
     public Indexers()
     {
         storage = [];
+
+        this["Clave"] = 12;
     }
 
-    //Un indexer permite describir como se debe comportar un objeto cuando es tratado como un array
+    //Un indexer permite describir como se debe comportar un objeto cuando es tratado como un array asociativo o diccionario
     public int this[string key]
     {
         get

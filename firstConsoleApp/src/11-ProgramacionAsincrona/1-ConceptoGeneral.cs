@@ -32,6 +32,7 @@ class ConceptoGeneral
         //demas tareas, por lo tanto los metodos FryEggsAsync(), FryBaconAsync() y ToastBreadAsync() a pesar
         //de que se lean de manera secuencial en el codigo, estos seran ejecutados en paralelo, es decir
         //que los tres se empezaran a ejecutar al mismo tiempo.
+        //Importante recordar que no se estan creando hilos ni se esta haciendo uso del patron multithreading
         Task<Egg> eggsTask = FryEggsAsync(2);
         Task<Bacon> baconTask = FryBaconAsync(3);
         Task<Toast> toastTask = MakeToastWithButterAndJamAsync(2);

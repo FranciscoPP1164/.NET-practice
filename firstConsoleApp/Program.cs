@@ -4,13 +4,14 @@ using LINQ;
 using POO;
 using POO.Mamiferos;
 using POO.Mamiferos.Interfaces;
+using ProgramacionAsincrona;
 using SintaxisAvanzada;
 
 namespace App
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             // POO1();
             // Arrays();
@@ -20,6 +21,8 @@ namespace App
             // Colecciones();
             // DelegadosPredicadosLambdas();
             // Linq();
+            ConceptoGeneral conceptoGeneral = new ConceptoGeneral();
+            await conceptoGeneral.MakeBreakfast();
         }
 
         static void POO1()

@@ -6,6 +6,7 @@ using POO.Mamiferos;
 using POO.Mamiferos.Interfaces;
 using ProgramacionAsincrona;
 using SintaxisAvanzada;
+using SintaxisExperta;
 
 namespace App
 {
@@ -22,6 +23,7 @@ namespace App
             // DelegadosPredicadosLambdas();
             // Linq();
             // await ProgramacionAsincrona();
+            SintaxisExperta();
         }
 
         static void POO1()
@@ -202,6 +204,16 @@ namespace App
             // await conceptoGeneral.MakeBreakfast();
             ProcesarTareas procesarTareas = new();
             await procesarTareas.SumPageSizesAsync();
+        }
+
+        static void SintaxisExperta()
+        {
+            Attributes attributes = new Attributes();
+            Console.WriteLine(attributes.GetType());
+            AnClass anClass = new();
+            Reflection reflection = new();
+            reflection.ReadAttributes(anClass.GetType());
+            reflection.ReadAttributes(typeof(AnClass));
         }
     }
 }

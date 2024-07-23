@@ -11,7 +11,7 @@ namespace App
 {
     class Program
     {
-        static async Task Main(string[] args)
+        static void Main(string[] args)
         {
             // POO1();
             // Arrays();
@@ -21,8 +21,7 @@ namespace App
             // Colecciones();
             // DelegadosPredicadosLambdas();
             // Linq();
-            ConceptoGeneral conceptoGeneral = new ConceptoGeneral();
-            await conceptoGeneral.MakeBreakfast();
+            // await ProgramacionAsincrona();
         }
 
         static void POO1()
@@ -195,6 +194,14 @@ namespace App
         {
             // new LINQ.SintaxisBasica();
             new LINQ.ConceptosBasicos();
+        }
+
+        static async Task ProgramacionAsincrona()
+        {
+            // ConceptoGeneral conceptoGeneral = new ConceptoGeneral();
+            // await conceptoGeneral.MakeBreakfast();
+            ProcesarTareas procesarTareas = new();
+            await procesarTareas.SumPageSizesAsync();
         }
     }
 }
